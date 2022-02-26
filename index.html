@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Gerador de senhas, gerador password.">
+    <title>Gerador de Senha 8001</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="div-main">
+        
+        <section class="section-gerador"> 
+                <img src="geradordesenha.png" alt="Gerador de Senha" id="img-topo">           
+                         
+            <div class="container-input">
+                    <div class="msg-tamanho">
+                        <span>Tamanho <span id="valor"></span> caracteres</span>
+                    </div>
+                    <input type="range" id="slider" class="slider" min="5" max="25" value="15">
+                    <button id="button" class="button-cta" onclick="gerarSenha()">Gerar Senha</button>
+                
+                <div id="container-password" class="container-password hide">
+                    <span class="title"> Sua senha gerada foi:</span>
+                    <span id="password" class="password" onclick="copiarSenha()">1231232312321312</span>
+                    <span class="tooltip">Clique na senha para copiar. 👆 </span>
+                </div>
+            </div>    
+        </section>
+        <section class="section-texto">
+            <div class="container-texto"> 
+                <article class="article-texto">
+                    <div class="container-texto-interno">
+                        <h1>Fique ainda mais seguro gere sua senha ao lado, basta clicar em gerar senha e será mostrado a senha do tamanho selecionado</h1>
+                        <p>Confira essas dicas no site <a href="https://www.kaspersky.com.br/resource-center/threats/how-to-create-a-strong-password " target="_blank">kaspersky</a> um dos melhores e mais seguros antivírus do mundo, Veja algumas logo abaixo.</p>
+                    </div>
+                                            
+                        <div class="container-texto-interno">
+                            <p>Ela é longa? Tente usar pelo menos 10 ou 12 caracteres, ou o máximo possível.</p>
+                            
+                            <p>Ela é difícil de adivinhar? Evite sequências, como "12345" ou "qwerty", pois elas podem ser hackeadas por força bruta em segundos. Pelo mesmo motivo, evite também palavras comuns ("senha1").</p>
+                            
+                            <p>Ele tem tipos variados de caracteres? Letras minúsculas e maiúsculas, símbolos e números devem fazer parte da senha. A variedade pode tornar a sua senha mais imprevisível.</p>
+                            
+                            <p>Substituições óbvias de caracteres são evitadas? Por exemplo, usar o número zero "0" no lugar da letra "O". Essas substituições já estão codificadas nos softwares de hackeamento atuais. Então, evite isso.</p>
+                        </div>
+                    
+                    <div class="container-texto-interno">                        
+                        <p>Confira o artigo completo em <a href="https://www.kaspersky.com.br/resource-center/threats/how-to-create-a-strong-password " target="_blank">kaspersky</a>.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </div>
+    <footer>
+        <p>Desenvolvido por Adilson Gaspar, para estudo!</p>
+        <p><a href="https://github.com/">Github</a></p>
+        <p><a href="https://www.linkedin.com/in/adilson-gaspar-7477b7192/">LinkedIn</a></p>
+    </footer>
+
+    <script src="script.js"></script>    
+</body>
+</html>
